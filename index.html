@@ -1,177 +1,407 @@
-<!Doctype html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet">
+  </head>
+  <body class="w-[1920px]">
+    <header>
+      <nav class="flex">
+        <img src="/assets/icons/Logo.svg" alt="logo"
+          class="ml-[160px] mt-[70px]">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <nav class="flex">
-      <img src="/assets/icons/Logo (3).svg" alt="logo" class="ml-[140px] mt-[70px]">
-
-      <div class="flex text-[#274C5B] font-bold font-['Roboto'] text-[20px]  mt-[92px] ml-[130px] gap-[35px]">
-        <p class="textsitem">Home</p>
-        <p class="textsitem ml-[10px]">About</p>
-        <p class="textsitem ml-[10px]">Pages</p>
-        <p class="textsitem ml-[10px]">Shop</p>
-        <p class="textsitem ml-[10px]">Projects</p>
-        <p class="textsitem ml-[10px]">News</p>
-      </div>
-
-      <div class="flex mt-[70px] ml-[500px]">
-        <img src="/assets/icons/Search Icon.svg" alt="search" class="w-[56px] h-[56px]">
-        <div class="flex rounded-[33px] border-solid border-[2px] border-[#E0E0E0] w-[160px] ml-[20px]">
-          <img src="/assets/icons/Cart Icon.svg" alt="cart icon" class="w-[56px] h-[56px] ml-[2px] ">
-          <p class="text-[#274C5B] font-semibold font-['Roboto'] text-[18px] leading-[21px] mt-[17px] ml-[20px]">Cart(0)
-          </p>
+        <div
+          class="flex text-[#274C5B] font-bold font-['Roboto'] text-[20px] leading-[23.44px] mt-[92px] ml-[110px] gap-[40px]">
+          <p class="textsitem">Home</p>
+          <p class="textsitem ml-[10px]">About</p>
+          <p class="textsitem ml-[10px]">Pages</p>
+          <p class="textsitem ml-[10px]">Shop</p>
+          <p class="textsitem ml-[10px]">Projects</p>
+          <p class="textsitem ml-[10px]">News</p>
         </div>
-      </div>
-    </nav>
 
-  </header>
-  <main>
-    <section id="introimg" class="introimg mt-[40px]">
-      <img src="/assets/images/Banner.png" alt="About">
-    </section>
-    <section id="intro mt-[50px]">
-      <div class="flex mt-[100px]">
-        <div class="chap ml-[-100px]">
-          <img src="/assets/images/introimg.png" alt="image">
-        </div>
-        <div class="ong block mt-[40px] ml-[60px]">
-          <div class="h3 font-['Yellowtail'] font-normal text-[36px] leading-[49.06px] text-[#7EB693]">
-            <h3>About Us</h3>
+        <div class="flex mt-[70px] ml-[510px]">
+          <img src="/assets/icons/Search Icon.svg" alt="search"
+            class="w-[56px] h-[56px]">
+          <div
+            class="flex rounded-[33px] border-solid border-[2px] border-[#E0E0E0] w-[160px] ml-[20px]">
+            <img src="/assets/icons/Cart Icon.svg" alt="cart icon"
+              class="w-[56px] h-[56px] ml-[2px] ">
+            <p
+              class="text-[#274C5B] font-semibold font-['Roboto'] text-[18px] leading-[21px] mt-[17px] ml-[20px]">Cart(0)</p>
           </div>
-          <div class="h1 font-['Roboto'] font-extrabold text-[50px] leading-[58.59px] text-[#274C5B]">
-            <h1>We do Creative <br>
-              Things for Success</h1>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <section id="introimg" class="bg-[#C4C4C4] introimg mt-[40px]">
+        <img src="/assets/images/Banner.png" alt="About">
+      </section>
+      <section id="bg-[#C4C4C4] intro mt-[50px]">
+        <div class="flex mt-[100px]">
+          <div class="chap ml-[-100px]">
+            <img src="/assets/images/introimg.png" alt="image">
+          </div>
+          <div class="ong block mt-[40px] ml-[60px]">
+            <div
+              class="h3 font-['Yellowtail'] font-normal text-[36px] leading-[49.06px] text-[#7EB693]">
+              <h3>About Us</h3>
+            </div>
+            <div
+              class="h1 font-['Roboto'] font-extrabold text-[50px] leading-[58.59px] text-[#274C5B]">
+              <h1>We do Creative <br>
+                Things for Success</h1>
+            </div>
+            <div
+              class="1p font-['Open Sans'] font-normal text-[18px] leading-[29.77px] text-[#525C60] w-[671px] h-[210px]">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </div>
+            <div
+              class="2p font-['Open Sans'] font-normal text-[18px] leading-[29.77px] text-[#525C60] w-[671px] h-[210px] mt-[-15px]">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </div>
+            <div class="flex">
+              <div class="left flex">
+                <img src="/assets/icons/tractor.svg" alt="Vehicle">
+                <h3
+                  class="ml-[15px] mt-[10px] font-['Roboto'] font-medium  text-[25px] leading-[29.3px] text-[#274C5B] w-[226px] h-[62px]">Modern
+                  Agriculture
+                  Equipment
+                </h3>
+              </div>
+              <div class="right flex ml-[35px]">
+                <img src="/assets/icons/apartment.svg" alt="Building">
+                <h3
+                  class="ml-[15px] mt-[10px] font-['Roboto'] font-medium  text-[25px] leading-[29.3px] text-[#274C5B] w-[226px] h-[62px]">No
+                  growth hormones are used</h3>
+              </div>
+            </div>
+
+            <div
+              class="buttonsimon flex w-[226px] h-[80px] rounded-[16px] border-solid bg-[#274C5B] mt-[20px]">
+              <p
+                class="font-['Roboto'] font-bold text-[20px] leading-[23.44px] text-[#FFFFFF] ml-[40px] mt-[27px]">Explore
+                More</p>
+              <img src="/assets/icons/Aerrow.svg" alt="image"
+                class="w-[19px] h-[19px] ml-[20px] mt-[30px]">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="advertisement" class="w-[1920px] h-[1429px] bg-[#F9F8F8]">
+        <div class="all block">
+          <div class="first flex">
+            <div class="first block mt-[100px] ml-[200px]">
+              <div class="h3">
+                <h3
+                  class="font-['Yellowtail'] text-[#7EB693] text-normal text-[36px]">Why
+                  Choose us?</h3>
+              </div>
+              <div class="h2">
+                <h2
+                  class="font-['Roboto'] text-[50px] w-[524px] h-[118px] text-[#274C5B] leading-[58.59px] mt-[5px]"
+                  style="font-weight: 800;">We do not buy from the
+                  open market & traders.</h2>
+              </div>
+              <div
+                class="font-['Open Sans'] text-normal text-[18px] leading-[29.77px] text-[#525C60] w-[671px] h-[60px] mt-[10px]">Simply
+                dummy text of the printing and typesetting
+                industry. Lorem had ceased <br> to been the industry's standard
+                the
+                1500s, when an unknown</div>
+
+              <div
+                class="percent flex mt-[35px] rounded-[49px] border-solid border-[2px] bg-[#ECECEC] w-[300px] h-[75px] ">
+                <img src="/assets/icons/Icon.svg" alt="image"
+                  class="w-[19px] h-[19px] mt-[25px] ml-[15px]">
+                <h4
+                  class="font-['Roboto'] text-[20px] text-[#274C5B] mt-[18px] ml-[10px]"
+                  style="font-weight: 500;">100% Natural Product</h4>
+              </div>
+              <div
+                class="font-['Open Sans'] text-normal text-[18px] leading-[29.77px] text-[#525C60] w-[444px] h-[60px] mt-[10px] ml-[40px]">
+                <p>Simply dummy text of the printing and typesetting industry
+                  Lorem Ipsum</p>
+              </div>
+              <div
+                class="recictance flex mt-[20px] rounded-[49px] border-solid border-[2px] bg-[#ECECEC] w-[300px] h-[75px]">
+                <img src="/assets/icons/Icon1.svg" alt="image"
+                  class="w-[19px] h-[19px] mt-[25px] ml-[15px]">
+                <h4
+                  class="font-['Roboto'] text-[20px] text-[#274C5B] mt-[18px] ml-[10px]">
+                  Increases resistance</h4>
+              </div>
+              <div
+                class="font-['Open Sans'] text-normal text-[18px] leading-[29.77px] text-[#525C60] w-[444px] h-[60px] mt-[10px] ml-[40px]">
+                <p>Filling, and temptingly healthy, our Biona Organic Granola
+                  with Wild Berries is just the thing</p>
+              </div>
+
+            </div>
+            <div class="second mt-[100px] ml-[185px]">
+              <img src="/assets/images/lemon.png" alt="image"
+                class="w-[678px] h-[579px]">
+            </div>
+          </div>
+          <div class="tortoglon flex mt-[200px] gap-[100px] ml-[400px]">
+            <div
+              class="1oglon block w-[257px] h-[335px] justify-center rounded-[30px]"
+              style="background-color:rgba(255, 255, 255, 1);">
+              <img src="/assets/icons/1oglon.svg" alt="basket"
+                class="ml-[90px] mt-[50px]">
+              <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
+                style="font-weight: 800; text-align: center;">Return Policy</h4>
+              <p
+                class="ml-[35px] mt-[15px] w-[184px] h-[115px] font-['Open Sans'] font-normal text-[18px] text-[#525C60]"
+                style="text-align: center;">Simply dummy text of the
+                printintypesetting industry.</p>
+            </div>
+            <div
+              class="2oglon w-[257px] h-[335px] justify-center rounded-[30px]"
+              style="background-color:rgba(255, 255, 255, 1);">
+              <img src="/assets/icons/2oglon.svg" alt="report"
+                class="ml-[90px] mt-[50px]">
+              <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
+                style="font-weight: 800; text-align: center;">100% Fresh</h4>
+              <p
+                class="ml-[35px] mt-[15px] w-[184px] h-[115px] font-['Open Sans'] font-normal text-[18px] text-[#525C60]"
+                style="text-align: center;">Simply dummy text of the
+                printintypesetting industry.</p>
+            </div>
+            <div
+              class="3oglon w-[257px] h-[335px] justify-center rounded-[30px]"
+              style="background-color:rgba(255, 255, 255, 1);">
+              <img src="/assets/icons/3oglon.svg" alt="time"
+                class="ml-[90px] mt-[50px]">
+              <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
+                style="font-weight: 800; text-align: center;">Support 24/7</h4>
+              <p
+                class="ml-[35px] mt-[15px] w-[184px] h-[115px] font-['Open Sans'] font-normal text-[18px] text-[#525C60]"
+                style="text-align: center;">Simply dummy text of the
+                printintypesetting industry.</p>
+            </div>
+            <div
+              class="4oglon w-[257px] h-[335px] justify-center rounded-[30px]"
+              style="background-color:rgba(255, 255, 255, 1);">
+              <img src="/assets/icons/4oglon.svg" alt="payment"
+                class="ml-[90px] mt-[50px]">
+              <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
+                style="font-weight: 800; text-align: center;">Secured Payment
+              </h4>
+              <p
+                class="ml-[35px] mt-[15px] w-[184px] h-[115px] font-['Open Sans'] font-normal text-[18px] text-[#525C60]"
+                style="text-align: center;">Simply dummy text of the
+                printintypesetting industry.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="experts">
+        <div class="all block">
+          <h4
+            class="font-['Yellowtail'] text-[36px] font-normal text-[#7EB693] text-center">Team</h4>
+          <h2
+            class="font-['Roboto'] font-extrabold text-[50px] text-[#274C5B] text-center">Our
+            Organic Experts</h2>
+          <p
+            class="font-['Open Sans'] font-normal text-[18px] text-[#525C60] text-center w-[852px] h-[60px] ml-[534px]">Simply
+            dummy text of the printing and typesetting industry. Lorem
+            had ceased to been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley.</p>
+        </div>
+        <div class="cards flex ml-[260px] mt-[20px] gap-[20px]">
+          <div class="card1 shadow-xl h-[615px] w-[449px] border-1 rounded-xl">
+            <img src="/assets/images/Bacardo.png" alt="Farmer">
+            <h2
+              class="font-['Roboto'] font-extrabold text-[25px] text-[#274C5B] mt-[40px] ml-[15px] ">Giovani
+              Bacardo</h2>
+            <div class="icons1 flex">
+              <h4
+                class="font-['Yellowtail'] font-normal text-[22px] text-[#7EB693] ml-[15px]">Farmer</h4>
+              <img src="/assets/icons/facebook.svg" alt="FACEBOOK"
+                class="ml-[300px]">
+              <img src="/assets/icons/Twiter.svg" alt="TWITTER"
+                class="ml-[10px]">
+            </div>
           </div>
           <div
-            class="1p font-['Open Sans'] font-normal text-[18px] leading-[29.77px] text-[#525C60] w-[671px] h-[210px]">
-            Simply dummy text of the printing and typesetting industry. Lorem
-            had ceased to been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley.
+            class="card2 card1 shadow-xl h-[615px] w-[449px] border-1 rounded-xl shadow-[#969696]">
+            <img src="/assets/images/loreno.png" alt="Designer">
+            <h2
+              class="font-['Roboto'] font-extrabold text-[25px] text-[#274C5B] mt-[40px] ml-[15px]">Marianne
+              Loreno</h2>
+            <div class="icons2 flex">
+              <h4
+                class="font-['Yellowtail'] font-normal text-[22px] text-[#7EB693] ml-[15px]">Designer</h4>
+              <img src="/assets/icons/Insta.svg" alt="INSTAGRAM"
+                class="ml-[250px]">
+              <img src="/assets/icons/facebook2.svg" alt="FACEBOOK"
+                class="ml-[15px]">
+              <img src="/assets/icons/Twiter2.svg" alt="TWITTER"
+                class="ml-[15px]">
+            </div>
           </div>
           <div
-            class="2p font-['Open Sans'] font-normal text-[18px] leading-[29.77px] text-[#525C60] w-[671px] h-[210px] mt-[-15px]">
-            Simply dummy text of the printing and typesetting industry. Lorem
-            had ceased to been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley.
-          </div>
-          <div class="flex">
-            <div class="left flex">
-              <img src="/assets/icons/traktor.svg" alt="Vehicle">
-              <h3
-                class="ml-[15px] mt-[10px] font-['Roboto'] font-medium  text-[25px] leading-[29.3px] text-[#274C5B] w-[226px] h-[62px]">
-                Modern Agriculture
-                Equipment
-              </h3>
+            class="card3 card1 shadow-xl h-[615px] w-[449px] border-1 rounded-xl">
+            <img src="/assets/images/pelore.png" alt="Farmer">
+            <h2
+              class="font-['Roboto'] font-extrabold text-[25px] text-[#274C5B] mt-[40px] ml-[15px]">Riga
+              Pelore</h2>
+            <div class="icons3 flex">
+              <h4
+                class="font-['Yellowtail'] font-normal text-[22px] text-[#7EB693] ml-[15px]">Farmer</h4>
+              <img src="/assets/icons/Insta2.svg" alt="INSTAGRAM"
+                class="ml-[260px]">
+              <img src="/assets/icons/facebook3.svg" alt="FACEBOOK"
+                class="ml-[15px]">
+              <img src="/assets/icons/Twiter3.svg" alt="TWITTER"
+                class="ml-[15px]">
             </div>
-            <div class="right flex ml-[35px]">
-              <img src="/assets/icons/apartment.svg" alt="Building">
-              <h3
-                class="ml-[15px] mt-[10px] font-['Roboto'] font-medium  text-[25px] leading-[29.3px] text-[#274C5B] w-[226px] h-[62px]">
-                No growth hormones are used</h3>
-            </div>
-          </div>
-
-          <div class="buttonsimon flex w-[226px] h-[80px] rounded-[16px] border-solid bg-[#274C5B] mt-[40px]">
-            <p class="font-['Roboto'] font-bold text-[20px] leading-[23.44px] text-[#FFFFFF] ml-[40px] mt-[27px]">
-              Explore More</p>
-            <img src="/assets/icons/Aerrow.svg" alt="image" class="w-[19px] h-[19px] ml-[20px] mt-[30px]">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="advertisement" class="w-[1920px] h-[1429px] mt-[90px]" style="background-color:rgba(249, 248, 248, 1);">
-      <div class="all block">
-        <div class="first flex">
-          <div class="first block mt-[100px] ml-[200px]">
-            <div class="h3">
-              <h3 class="font-['Yellowtail'] text-[#7EB693] text-normal text-[36px]">Why Choose us?</h3>
-            </div>
-            <div class="h2">
-              <h2 class="font-['Roboto'] text-[50px] w-[524px] h-[118px] text-[#274C5B] leading-[58.59px] mt-[5px]"
-                style="font-weight: 800;">We do not buy from the
-                open market & traders.</h2>
-            </div>
-            <div
-              class="font-['Open Sans'] text-normal text-[18px] leading-[29.77px] text-[#525C60] w-[671px] h-[60px] mt-[10px]">
-              Simply dummy text of the printing and typesetting
-              industry. Lorem had ceased <br> to been the industry's standard the
-              1500s, when an unknown</div>
-
-            <div
-              class="percent flex mt-[35px] rounded-[49px] border-solid border-[2px] bg-[#ECECEC] w-[300px] h-[75px] ">
-              <img src="/assets/icons/Icon (4).svg" alt="image" class="w-[19px] h-[19px] mt-[25px] ml-[15px]">
-              <h4 class="font-['Roboto'] text-[20px] text-[#274C5B] mt-[18px] ml-[10px]" style="font-weight: 500;">100%
-                Natural Product</h4>
-            </div>
-            <div
-              class="font-['Open Sans'] text-normal text-[18px] leading-[29.77px] text-[#525C60] w-[444px] h-[60px] mt-[10px] ml-[40px]">
-              <p>Simply dummy text of the printing and typesetting industry Lorem Ipsum</p>
-            </div>
-            <div
-              class="recictance flex mt-[20px] rounded-[49px] border-solid border-[2px] bg-[#ECECEC] w-[300px] h-[75px]">
-              <img src="/assets/icons/Icon (4).svg" alt="image" class="w-[19px] h-[19px] mt-[25px] ml-[15px]">
-              <h4 class="font-['Roboto'] text-[20px] text-[#274C5B] mt-[18px] ml-[10px]"> Increases resistance</h4>
-            </div>
-            <div
-              class="font-['Open Sans'] text-normal text-[18px] leading-[29.77px] text-[#525C60] w-[444px] h-[60px] mt-[10px] ml-[40px]">
-              <p>Filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing</p>
-            </div>
-
-          </div>
-          <div class="second mt-[100px] ml-[185px]">
-            <img src="/assets/images/lemon.png" alt="image" class="w-[678px] h-[579px]">
-          </div>
-        </div>
-        <div class="tortoglon flex mt-[200px] gap-[100px] ml-[400px]">
-          <div class="1oglon block w-[257px] h-[335px] justify-center rounded-[30px]" style="background-color:rgba(255, 255, 255, 1);">
-            <img src="/assets/icons/Icon (8).svg" alt="basket" class=" ml-[90px] mt-[50px] ">
-            <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
-              style="font-weight: 800; text-align: center;">Return Policy</h4>
-            <p class="mt-[15px] ml-[35px] w-[184px] h-[115px] font-['Open Sans'] font-normal text-[18px] text-center text-[#525C60]">Simply dummy text of the printintypesetting industry.</p>
-          </div>
-          <div class="2oglon  w-[257px] h-[335px] justify-center rounded-[30px]" style="background-color:rgba(255, 255, 255, 1);"">
-            <img src="/assets/icons/Icon (9).svg" alt="report" class="ml-[90px] mt-[50px]">
-            <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
-              style="font-weight: 800; text-align: center;">100% Fresh</h4>
-            <p class="mt-[15px]  ml-[35px] w-[184px] h-[115px] font-['Open Sans'] text-normal text-[18px] text-[#525C60]"
-              style="text-align: center;">Simply dummy text of the printintypesetting industry.</p>
-          </div>
-          <div class="3oglon  w-[257px] h-[335px] justify-center rounded-[30px]" style="background-color:rgba(255, 255, 255, 1);"">
-            <img src="/assets/icons/Icon (10).svg" alt="time" class="ml-[90px] mt-[50px]">
-            <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
-              style="font-weight: 800; text-align: center;">Support 24/7</h4>
-            <p class="mt-[15px] ml-[35px] w-[184px] h-[115px] font-['Open Sans'] text-normal text-[18px] text-[#525C60]"
-              style="text-align: center;">Simply dummy text of the printintypesetting industry.</p>
-          </div>
-          <div class="4oglon  w-[257px] h-[335px] justify-center rounded-[30px]" style="background-color:rgba(255, 255, 255, 1);"">
-            <img src="/assets/icons/Icon (11).svg" alt="payment" class="ml-[90px] mt-[50px] ">
-            <h4 class="font-['Roboto'] text-[25px] text-[#274C5B] mt-[25px]"
-              style="font-weight: 800; text-align: center;">Secured Payment
-            </h4>
-            <p class="mt-[15px] ml-[35px] w-[184px] h-[115px] font-['Open Sans'] text-normal text-[18px] text-[#525C60]"
-              style="text-align: center;">Simply dummy text of the printintypesetting industry.</p>
           </div>
 
         </div>
 
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
 
+      <section id="products"
+        class="w-[1920px] h-[892px] bg-[#274C5B] mt-[170px]">
+        <div class="all block">
+          <div class="title pt-[188px]">
+            <h3
+              class="font-['Yellowtail'] font-normal text-[36px] text-[#7EB693] text-center">About
+              Us</h3>
+            <h2
+              class="font-['Roboto'] font-extrabold text-[50px] text-[#FFFFFF] text-center mt-[8px]">What
+              We Offer for You</h2>
+          </div>
+
+          <div class="pics flex mt-[33px] ml-[260px] gap-[21px]">
+            <div class="pic1 block">
+              <img src="/assets/images/spicy.png" alt="SPICY">
+              <h5
+                class="font-['Roboto'] font-medium text-[25px] text-[#FFFFFF] text-center">Spicy</h5>
+            </div>
+            <div class="pic2 block">
+              <img src="/assets/images/nuts.png" alt="Nuts">
+              <h5
+                class="font-['Roboto'] font-medium text-[25px] text-[#FFFFFF] text-center">Nuts
+                & Feesd</h5>
+            </div>
+            <div class="pic3 block">
+              <img src="/assets/images/Fruits.png" alt="Fruits">
+              <h5
+                class="font-['Roboto'] font-medium text-[25px] text-[#FFFFFF] text-center">Fruits</h5>
+            </div>
+            <div class="pic4 block">
+              <img src="/assets/images/vegetables.png" alt="Vegetables">
+              <h5
+                class="font-['Roboto'] font-medium text-[25px] text-[#FFFFFF] text-center">Vegetable</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer" class="w-[1920px] h-[1100px]">
+        <div class="all">
+          <div class="newsletter pt-[141px] ml-[260px]">
+            <img src="/assets/images/lemons.png" alt="Newsletter"
+              class="w-[1400px] h-[323px] rounded-[45px]">
+            <div class="details flex gap-[80px]">
+              <h2
+                class="w-[357px] h-[100] mt-[-230px] ml-[75px] font-['Roboto'] font-extrabold text-[50px] text-[#FFFFFF]">Subscribe
+                to
+                our Newsletter
+              </h2>
+              <div
+                class="subcription mt-[-200px] bg-[#FFFFFF] rounded-[16px] w-[350px] h-[80px] ml-[248px]">
+                <h5
+                  class="font-['Roboto'] italic font-normal text-[18px] text-[#ABABAB] pt-[28px] pb-[31px] pl-[23px] pr-[174px]">Your
+                  Email Address</h5>
+              </div>
+              <div
+                class="new mt-[-200px] bg-[#274C5B] rounded-[16px] w-[220px] h-[80px] ml-[-75px]">
+                <h5
+                  class="font-['Roboto'] font-bold text-[20px] text-[#FFFFFF] pt-[28px] pb-[29px] pl-[64.5px] pr-[64.5px]">Subscribe</h5>
+              </div>
+            </div>
+          </div>
+          <div class="orta flex">
+            <div class="contact flex">
+              <div class="chap mt-[117px] ml-[380px] text-end">
+                <h3
+                  class="font-['Roboto'] font-bold text-[30px] text-[#274C5B] ">Contact
+                  Us</h3>
+                <p
+                  class="textitems font-['Open Sans'] font-bold text-[18px] text-[#525C60] mt-[32px]">Email</p>
+                <p
+                  class="textitems font-['Open Sans'] font-normal text-[18px] text-[#525C60]">needhelp@Organia.com</p>
+                <p
+                  class="textitems font-['Open Sans'] font-bold text-[18px] text-[#525C60] mt-[25px]">Phone</p>
+                <p
+                  class="textitems font-['Open Sans'] font-normal text-[18px] text-[#525C60]">666
+                  888 888 </p>
+                <p
+                  class="textitems font-['Open Sans'] font-bold text-[18px] text-[#525C60] mt-[25px]">Address</p>
+                <p
+                  class="textitems font-['Open Sans'] font-normal text-[18px] text-[#525C60]">88
+                  road, borklyn street, USA</p>
+              </div>
+              <hr
+                class="rotate-90 w-[300px]  mt-[280px] border-[1px] ml-[-100px]">
+            </div>
+            <div class="victorflow mt-[117px]">
+              <img src="/assets/icons/Logo footer.svg" alt="Logo">
+              <div class="p">
+                <p
+                  class="font-['Open Sans'] text-normal text-[18px] text-[#525C60] mt-[23px] text-center ml-[-120px]">Simply
+                  dummy text of the printing and typesetting industry.
+                  <br> Lorem Ipsum simply dummy text of the printing </p>
+              </div>
+              <div class="minicons flex mt-[49px] gap-[15px] ml-[-20px]">
+                <img src="/assets/icons/instagram footer.svg" alt="INSTAGRAM">
+                <img src="/assets/icons/facebook footer.svg" alt="FACEBOOK">
+                <img src="/assets/icons/twitter footer.svg" alt="TWITTER">
+                <img src="/assets/icons/pinterest footer.svg" alt="PINTEREST">
+              </div>
+            </div>
+          </div>
+          <hr
+              class="rotate-90 w-[300px]  mt-[-150px] border-[1px] ml-[1040px]">
+          <div class="pages block ml-[1250px] mt-[-117px]">
+          
+              <h3 class="font-[Roboto] font-bold text-[30px]  text-[#274C5B] mt-[-160px]">Utility Pages</h3>
+            <div class="plar mt-[30px] font-['Open Sans'] font-normal text-[18px] text-[#525C60] ">
+              <p class="textitems">Style Guide</p>
+            <p class="textitems mt-[15px]">404 Not Found</p>
+            <p class="textitems mt-[15px]">Password Protected</p>
+            <p class="textitems mt-[15px]">Licences</p>
+            <p class="textitems mt-[15px]">Changelog</p>
+            </div>
+
+          </div>
+          <hr class="w-[1920px] rounded-[1px] mt-[190px]">
+          <div> <h5 class="font-['Open Sans'] font-normal text-[18px] text-[#525C60] text-center pt-[22px]">Copyright © <span class="font-['Open Sans'] font-bold text-[18px]">Organick</span>  | Designed by <span class="font-['Open Sans'] font-bold text-[18px]">VictorFlow</span> Templates - Powered by <span class="font-['Open Sans'] font-bold text-[18px]">Webflow</span> </h5> </div>
+        </div>
+      </section>
+
+    </main>
+  </body>
 </html>
